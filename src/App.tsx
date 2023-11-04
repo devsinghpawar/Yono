@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "./globals.css";
 import SigninForm from "./_Auth/forms/SigninForm";
 import { Home } from "./_root/pages";
-import SignUpForm from "./_Auth/forms/SignUpForm";
+import SignupForm from "./_Auth/forms/SignupForm";
 import AuthLayout from "./_Auth/AuthLayout";
 import RootLayout from "./_root/RootLayout";
 
@@ -14,7 +14,7 @@ const App = () => {
         {/* public routes */}
         <Route element={<AuthLayout />}>
           <Route path="/sign-in" element={<SigninForm />} />
-          <Route path="/sign-up" element={<SignUpForm />} />
+          <Route path="/sign-up" element={<SignupForm />} />
         </Route>
         {/* private routes */}
         <Route element={<RootLayout />}>
