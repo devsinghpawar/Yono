@@ -3,8 +3,8 @@ import { ReactNode } from "react";
 
 const queryClient = new QueryClient();
 
-export const QueryProvider = ({ childern }: { children: ReactNode }) => {
+export const QueryProvider = ({ children }: { children: ReactNode }) => {
   return (
-    <QueryClientProvider client={queryClient}>{childern}</QueryClientProvider>
+    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   );
 };
